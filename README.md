@@ -33,8 +33,13 @@ Don't hesitate to [connect with me](https://www.linkedin.com/in/thomas-demtsu/) 
 ## 📚 Repositories
 
 
-<img align='left' width = "47%" src="https://github-readme-stats.vercel.app/api/pin/?username=tdemtsu&repo=blog"/>
-<img align='right' width = "47%" src="https://github-readme-stats.vercel.app/api/pin/?username=tdemtsu&repo=poe2021"/>
+<a href="https://github.com/tdemtsu/blog">
+  <img align='left' width="47%" src="https://github-readme-stats.vercel.app/api/pin/?username=tdemtsu&repo=blog"/>
+</a>
+<a href="https://github.com/tdemtsu/poe2021">
+  <img align='right' width="47%" src="https://github-readme-stats.vercel.app/api/pin/?username=tdemtsu&repo=poe2021"/>
+</a>
+
 
 
 <br>
