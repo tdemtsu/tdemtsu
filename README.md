@@ -3,12 +3,12 @@
 **`Comp Sci @ Cornell University (Google CSSI & TEC)`**
 
 Hi there! I'm Thomas Demtsu, a computer science student at Cornell University. I've participated in Google's CSSI and TEC programs, where I gained hands-on experience in software development and web technologies. My passion for programming drives me to constantly learn and explore new technologies.
-My web expertise lies in TypeScript, Python, Next.js, and React. I'm also comfortable working with Python and Java.
+My web expertise lies in TypeScript, Python, Next.js, and React. I'm also experiened with Python and Java.
 
-I have experience working with teams to develop and deploy applications, and I enjoy tackling challenging problems and delivering high-quality solutions.
+I have experience working with teams to develop applications, and I enjoy tackling challenging problems and delivering high-quality solutions.
 In my free time, I enjoy working on personal projects and contributing to open-source software. 
 
-Check out my GitHub repositories to see some of my work! Don't hesitate to connect with me on LinkedIn if you'd like to discuss potential collaborations or just say hi. 
+Check out my GitHub repositories to see some of my work! Don't hesitate to connect with me on LinkedIn if you'd like to discuss potential collaborations. 
 
 Don't hesitate to [connect with me](https://www.linkedin.com/in/thomas-demtsu/) to discuss potential collaborations or just to say hi!
 ## 📈 Stats
