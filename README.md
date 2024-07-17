@@ -27,4 +27,63 @@ Don't hesitate to [connect with me](https://www.linkedin.com/in/thomas-demtsu/) 
   <img align='middle'  src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" alt="React logo">
 </div>
 
+        try {
+            // Try to parse the number without specifying a region
+            PhoneNumber number = phoneUtil.parse("+" + digitsOnly, null);
+            return phoneUtil.isValidNumber(number);
+        } catch (NumberParseException e) {
+            // If parsing fails, try one more time with common country codes
+            for (String prefix : new String[]{"1", "44", "86", "91"}) {
+                try {
+                    PhoneNumber number = phoneUtil.parse("+" + prefix + digitsOnly, null);
+                    if (phoneUtil.isValidNumber(number)) {
+                        return true;
+                    }
+                } catch (NumberParseException ignored) {
+                    // Continue to the next prefix
+                }
+            }
+            return false;
+        }
+    }
+}
+```
+
+This updated version:
+
+1. Doesn't require a default region.
+2. Accepts phone numbers between 5 and 15 digits long (after removing non-digit characters).
+3. First tries to parse the number by adding a '+' prefix.
+4. If that fails, it tries parsing with some common country codes (1 for US/Canada, 44 for UK, 86 for China, 91 for India).
+5. Returns true if any of these parsing attempts succeed.
+
+Here's how you might use and test this validator:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        String[] testNumbers = {
+            "1234567890",
+            "+1 (123) 456-7890",
+            "123-456-7890",
+            "123.456.7890",
+            "(123) 456-7890",
+            "123 456 7890",
+            "1234567890",
+            "+441234567890",
+            "00441234567890",
+            "44.1234567890",
+            "+1(415) 555-9876",
+            "1 (415) 555-9876",
+            "415-555-9876",
+            "(415) 555-9876",
+            "4155559876",
+            "+1(415)555-9876",
+            "+1(415) 555 9876",
+            "+1415-555-9876",
+            "+1 415.555.9876",
+            "abc123def456ghi7890",
+            "+8613812345678",
+            "9198765432"
+        };
 
